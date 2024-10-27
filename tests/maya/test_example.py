@@ -3,7 +3,7 @@ import pytest
 
 # def test_create_locator_expects_locator_created():
 #     # Arrange
-#     from {{PROJECT_NAME}}.example import create_locator
+#     from unrealpycharmremotedebug.example import create_locator
 #     from maya import cmds
 #
 #     # Act

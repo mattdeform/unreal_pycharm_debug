@@ -5,11 +5,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <a href="https://github.com/{{PROJECT_OWNER}}/{{PROJECT_NAME}}">
+  <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
     <img src="docs/resources/images/maya_python_logo.png" alt="MayaPythonLogo" width="175" height="175">
   </a>
 
-<h3 align="center">{{PROJECT_NAME}}</h3>
+<h3 align="center">unreal_pycharm_remote_debug</h3>
 
   <p align="center">
     Development and Contributing Guidelines
@@ -155,10 +155,10 @@ To serve the docs locally:
 <!-- CI -->
 ## Continuous Integration
 Continuous integration is set up with [GitHub Actions][github-actions-url], workflows can be found in the [.github/workflows](.github/workflows) directory. There are 2 main workflows:
-1. [ci-main.yml](.github/workflows/ci-main.yml): This workflow is intended to be a fast check to ensure the code is in a good state, and code standards are met. It runs automatically on every push and pull request to main or can be triggered from the `Run workflow` button on the [actions menu](https://github.com/{{PROJECT_OWNER}}/{{PROJECT_NAME}}/actions/workflows/ci-main.yml). It runs tests (if they exist), and performs linting, formatting, and type hinting checks.
+1. [ci-main.yml](.github/workflows/ci-main.yml): This workflow is intended to be a fast check to ensure the code is in a good state, and code standards are met. It runs automatically on every push and pull request to main or can be triggered from the `Run workflow` button on the [actions menu](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-main.yml). It runs tests (if they exist), and performs linting, formatting, and type hinting checks.
    <div align="center">        <img src="docs/resources/images/ci_main.png" alt="drawing" width="600"/>
     </div>
-2. [ci-release.yml](.github/workflows/ci-release.yml): This workflow will do all the above, create a release version of the repo and deploy the documentation to GitHub pages. It can be run from the `Run workflow` button on the [actions menu](https://github.com/{{PROJECT_OWNER}}/{{PROJECT_NAME}}/actions/workflows/ci-release.yml).
+2. [ci-release.yml](.github/workflows/ci-release.yml): This workflow will do all the above, create a release version of the repo and deploy the documentation to GitHub pages. It can be run from the `Run workflow` button on the [actions menu](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-release.yml).
    <div align="center">        <img src="docs/resources/images/ci_release.png" alt="drawing" width="900"/>
      </div>
 
@@ -166,7 +166,7 @@ Continuous integration is set up with [GitHub Actions][github-actions-url], work
 * Versions of Maya to test against can be specified in the [reusable-maya-tests.yml](.github/workflows/reusable-maya-tests.yml) file.
   * The Maya tests workflow will only run if tests exist in the `tests` directory, otherwise the CI will skip this workflow to avoid pulling the Maya Docker image unnecessarily.
 * [Coding standards enforced](.github/workflows/reusable-static-analysis.yml) with [pylint](https://pypi.org/project/pylint/), [black](https://github.com/psf/black), and [mypy](https://mypy.readthedocs.io/en/stable/), with minimal configuration.
-* [Docs are built](.github/workflows/reusable-build-and-deploy-docs.yml) with [mkdocs](https://www.mkdocs.org/) and deployed to GitHub pages: [https://{{PROJECT_OWNER}}.github.io/{{PROJECT_NAME}}](https://{{PROJECT_OWNER}}.github.io/{{PROJECT_NAME}}).
+* [Docs are built](.github/workflows/reusable-build-and-deploy-docs.yml) with [mkdocs](https://www.mkdocs.org/) and deployed to GitHub pages: [https://mattdeform.github.io/unreal_pycharm_remote_debug](https://mattdeform.github.io/unreal_pycharm_remote_debug).
   *  > To enable GitHub pages, go to the settings of your repository, scroll down to the GitHub Pages section, and select the `gh-pages` branch as the source.
   *<img src="docs/resources/images/gh-pages.png" alt="drawing" width="1024"/>
 

@@ -1,4 +1,4 @@
-site_name: {{SITE_NAME}}
+site_name: unreal_pycharm_remote_debug
 theme:
   name: material
   language: en
