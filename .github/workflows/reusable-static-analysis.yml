@@ -13,7 +13,7 @@ jobs:
       fail-fast: false
 
       matrix:
-        python-version: ["3.10",]  # maya 2024
+        python-version: ["3.11",]  # Unreal 5.4.4
 
     steps:
     - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        pylint src
+        pylint plugin_src/5.x.0/pycharm_remote_debug/Content/Python
 
     - name: Analysing the code with black
       uses: psf/black@stable
@@ -39,4 +39,4 @@ jobs:
         options: "--diff"
 
     - name: Analysing the code with mypy
-      run: mypy src
+      run: mypy plugin_src/5.x.0/pycharm_remote_debug/Content/Python
