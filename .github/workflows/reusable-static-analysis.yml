@@ -35,7 +35,7 @@ jobs:
     - name: Analysing the code with black
       uses: psf/black@stable
       with:
-        src: "src"
+        src: "plugin_src/5.x.0/pycharm_remote_debug/Content/Python"
         options: "--diff"
 
     - name: Analysing the code with mypy
