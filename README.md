@@ -13,14 +13,14 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/maya_python_logo.png" alt="MayaPythonLogo" width="175" height="175">
+    <img src="docs/resources/images/UE-Icon-2023-Black.png" alt="Unreal" width="128" height="128">
+    <img src="docs/resources/images/PyCharm.png" alt="PyCharmLogo" width="128" height="128">
   </a>
 
 [![Python][python_3-shield]][python-url]
-[![Maya][maya-2024-shield]][maya-2024-url]
-[![Maya][maya-cmds-shield]][maya-cmds-url]
+[![Unreal][unreal_5-shield]][unreal-url]
 
-<h3 align="center">unreal_pycharm_remote_debug</h3>
+<h3 align="center">Unreal PyCharm Remote Debug</h3>
   An Unreal Engine plugin for connecting to a PyCharm remote debugger.
   <br />
   <p align="center">
@@ -182,20 +182,5 @@ Please reach out via the [request a feature](https://github.com/mattdeform/unrea
 [github-actions-shield]: https://img.shields.io/badge/GitHub%20Actions-%232671E5?logo=githubactions&logoColor=white
 [github-actions-url]: https://github.com/features/actions
 
-<!-- Maya -->
-[maya-shield]: https://img.shields.io/badge/Autodesk-Maya-%2337A5CC?logo=autodeskmaya&logoColor=%2337A5CC
-[maya-2022-shield]: https://img.shields.io/badge/Maya-2022-%2337A5CC?logo=autodeskmaya&logoColor=%2337A5CC
-[maya-2022-url]: https://help.autodesk.com/view/MAYAUL/2022/ENU/
-[maya-2023-shield]: https://img.shields.io/badge/Maya-2023-%2337A5CC?logo=autodeskmaya&logoColor=%2337A5CC
-[maya-2023-url]: https://help.autodesk.com/view/MAYAUL/2023/ENU/
-[maya-2024-shield]: https://img.shields.io/badge/Maya-2024-%2337A5CC?logo=autodeskmaya&logoColor=%2337A5CC
-[maya-2024-url]: https://help.autodesk.com/view/MAYAUL/2024/ENU/
-[maya-2025-shield]: https://img.shields.io/badge/Maya-2025-%2337A5CC?logo=autodeskmaya&logoColor=%2337A5CC
-[maya-2025-url]: https://help.autodesk.com/view/MAYAUL/2025/ENU/
-[maya-cmds-shield]: https://img.shields.io/badge/Maya-cmds-%2337A5CC?logo=autodeskmaya
-[maya-cmds-url]: https://help.autodesk.com/view/MAYAUL/2023/ENU/?guid=__CommandsPython_index_html
-[maya-openmaya-shield]: https://img.shields.io/badge/Maya-OpenMaya-%2337A5CC?logo=autodeskmaya
-[maya-openmaya-url]: https://help.autodesk.com/view/MAYAUL/2022/ENU/?guid=Maya_SDK_Maya_Python_API_Maya_Python_API_1_0_html
-[maya-api-openmaya-shield]: https://img.shields.io/badge/Maya-api.OpenMaya-%2337A5CC?logo=autodeskmaya
-[maya-api-openmaya-url]: https://help.autodesk.com/view/MAYAUL/2022/ENU/?guid=Maya_SDK_py_ref_index_html
-[maya-url]: https://www.autodesk.com/nz/products/maya/overview
+[unreal_5-shield]: https://img.shields.io/badge/Unreal%20Engine-5.x-grey?logo=unrealengine&labelColor=%230E1128
+[unreal-url]: https://www.unrealengine.com/en-US

@@ -10,9 +10,7 @@ on:
 jobs:
 
   static-analysis:
-    if: github.repository != 'mattdeform/MayaPythonProjectTemplate'
     uses: ./.github/workflows/reusable-static-analysis.yml
 
   tests:
-    if: github.repository != 'mattdeform/MayaPythonProjectTemplate'
-    uses: ./.github/workflows/reusable-maya-tests.yml
+    uses: ./.github/workflows/reusable-unit-tests.yml
