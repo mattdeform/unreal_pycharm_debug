@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/maya_python_logo.png" alt="MayaPythonLogo" width="175" height="175">
+    <img src="plugin_src/5.x.0/pycharm_remote_debug/Resources/Icon128.png" alt="PyCharmLogo" width="128" height="128">
   </a>
 
 <h3 align="center">unreal_pycharm_remote_debug</h3>
@@ -119,20 +119,20 @@ Static code analysis is performed with [Pylint](https://pypi.org/project/pylint/
 To run pylint locally:
 
 -   ```sh
-    pylint --rcfile=.pylintrc src/
+    pylint --rcfile=.pylintrc plugin_src/5.x.0/pycharm_remote_debug/
     ```
-    - A modified [.pylintrc](.pylintrc) file is provided with modifications to ignore Maya import errors. Append to this file as needed.  
+    - A modified [.pylintrc](.pylintrc) file is provided with modifications to ignore Unreal import errors. Append to this file as needed.  
 
 Black formater can be run locally with:
 
 -   ```sh
-    black src/
+    black plugin_src/5.x.0/pycharm_remote_debug/
     ```
 
 Run [mypy](https://mypy.readthedocs.io/en/stable/) checks locally with:
 
 -   ```sh
-    mypy src/
+    mypy plugin_src/5.x.0/pycharm_remote_debug/
     ```
     - A modified [mypy.ini](mypy.ini) file is included with modifications to ignore Maya import errors. Append to this file as needed.
 
@@ -163,7 +163,7 @@ Continuous integration is set up with [GitHub Actions][github-actions-url], work
      </div>
 
 ### Further useful information on the workflows:
-* Versions of Maya to test against can be specified in the [reusable-maya-tests.yml](.github/workflows/reusable-maya-tests.yml) file.
+* Versions of Maya to test against can be specified in the [reusable-maya-tests.yml](.github/workflows/reusable-unit-tests.yml) file.
   * The Maya tests workflow will only run if tests exist in the `tests` directory, otherwise the CI will skip this workflow to avoid pulling the Maya Docker image unnecessarily.
 * [Coding standards enforced](.github/workflows/reusable-static-analysis.yml) with [pylint](https://pypi.org/project/pylint/), [black](https://github.com/psf/black), and [mypy](https://mypy.readthedocs.io/en/stable/), with minimal configuration.
 * [Docs are built](.github/workflows/reusable-build-and-deploy-docs.yml) with [mkdocs](https://www.mkdocs.org/) and deployed to GitHub pages: [https://mattdeform.github.io/unreal_pycharm_remote_debug](https://mattdeform.github.io/unreal_pycharm_remote_debug).

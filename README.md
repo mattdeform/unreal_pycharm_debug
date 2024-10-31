@@ -13,12 +13,10 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/maya_python_logo.png" alt="MayaPythonLogo" width="175" height="175">
+    <img src="plugin_src/5.x.0/pycharm_remote_debug/Resources/Icon128.png" alt="PyCharmLogo" width="128" height="128">
   </a>
 
 [![Python][python_3-shield]][python-url]
-[![Maya][maya-2024-shield]][maya-2024-url]
-[![Maya][maya-cmds-shield]][maya-cmds-url]
 
 <h3 align="center">unreal_pycharm_remote_debug</h3>
   An Unreal Engine plugin for connecting to a PyCharm remote debugger.
