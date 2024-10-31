@@ -4,4 +4,13 @@
 # (useful for modules/projects where namespaces are manipulated during runtime
 # and thus existing member attributes cannot be deduced by static analysis). It
 # supports qualified module names, as well as Unix pattern matching.
-ignored-modules=maya
+ignored-modules=unreal
+
+[MASTER]
+disable=
+    C0103,  # invalid-name (for Content/Python UE requirement )
+    R0801,  # duplicate-code
+    C0114,  # missing-module-docstring
+    C0415,  # import-outside-toplevel
+    R0903,  # too-few-public-methods
+
