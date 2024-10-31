@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1",
+	"FriendlyName": "PyCharmRemoteDebug",
+	"Description": "A convenience plugin for connecting to a PyCharm remote debugger",
+	"Category": "Programming",
+	"CreatedBy": "mattdeform",
+	"CreatedByURL": "https://www.deform.dev",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/mattdeform/unreal_pycharm_remote_debug",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"EngineVersion" : "5.x.0",
+	"PlatformAllowList": [ "Win64", "Win32", "Mac" ]
+}
