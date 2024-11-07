@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/project_logo.png" alt="PyCharmLogo" width="128" height="128">
+    <img src="docs/resources/images/project_logo.png" alt="PyCharmLogo" width="200">
   </a>
 
 <h3 align="center">Unreal PyCharm Remote Debug</h3>

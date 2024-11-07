@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/project_logo.png" alt="Unreal" width="128" height="128">
+    <img src="docs/resources/images/project_logo.png" alt="Unreal" width="200">
   </a>
 
 [![Python][python_3-shield]][python-url]
