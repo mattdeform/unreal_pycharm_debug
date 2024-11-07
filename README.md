@@ -13,8 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="docs/resources/images/UE-Icon-2023-Black.png" alt="Unreal" width="128" height="128">
-    <img src="docs/resources/images/PyCharm.png" alt="PyCharmLogo" width="128" height="128">
+    <img src="docs/resources/images/project_logo.png" alt="Unreal" width="128" height="128">
   </a>
 
 [![Python][python_3-shield]][python-url]
@@ -24,9 +23,6 @@
   An Unreal Engine plugin for connecting to a PyCharm remote debugger.
   <br />
   <p align="center">
-    <a href="https://mattdeform.github.io/unreal_pycharm_remote_debug"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">View Demo</a>
     ·
     <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -63,12 +59,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Please replace this text with a description of the project.
+<b>This is NOT an official JetBrains or Epic Games plugin, just a small utility I built for myself that I figured others might find useful.</b>
 
 <div align="center">
 
-[![Product Name Screen Shot][product-screenshot]][project-link]
+<img src="docs/resources/images/screenshot.png" alt="Unreal" width="900">
 
 </div>
     
@@ -77,20 +72,11 @@ Please replace this text with a description of the project.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-Please replace this text with a guide to getting started with this project.
-
-Development and contribution guidelines can be found on the [contributing](CONTRIBUTING.md) page.
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Prerequisites
-Please replace this text with a list of pre-requisites for the project.
 
-* Maya
+* [Unreal 5.4.0](https://www.unrealengine.com)
+* [PyCharm Professional](https://www.jetbrains.com/pycharm/buy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,11 +84,10 @@ Please replace this text with a list of pre-requisites for the project.
 
 ### Installation
 
-1. Either clone the repo or download the zip file from the [project page][project-link] and extract it. 
-    ```sh
-    git clone https://github.com/mattdeform/unreal_pycharm_remote_debug.git  
-    ```
-2. Installation instructions go here.
+1. [Download the plugin and "Add to My Library"](https://www.fab.com/). <!--   1. TODO: add proper link when live -->
+2. Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library. <!-- TODO: add pic when live -->
+3. Open the project and in the level editor you should have a new menu named "PyCharm", select Configure
+   1. <img src="docs/resources/images/getting_started_0.png" alt="Unreal" width="700">
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,18 +96,28 @@ Please replace this text with a list of pre-requisites for the project.
 <!-- USAGE EXAMPLES -->
 ### Usage
 
-Use this space to show useful examples of how the project can be used.
+1. You can configure port number and debug egg file location (comes with PyCharm installation) by clicking on the PyCharm -> Configure menu. 
+    1. <img src="docs/resources/images/getting_started_1.png" alt="Unreal" width="700">
+2. Select desired port number, and click "Find installed" to find the systems installed PyCharm. Alternatively you can manually enter a path to a desired pydevd-pycharm.egg file.
+   1. <img src="docs/resources/images/getting_started_2.png" alt="Unreal" width="700">
+3. In PyCharm, create a new Python Debug Server named <b>Unreal</b>, with the port number set in the previous step.
+   1. <img src="docs/resources/images/getting_started_3.png" alt="Unreal" width="700">
+4. In PyCharm click the Unreal debug icon.
+   1. <img src="docs/resources/images/getting_started_4.png" alt="Unreal" >
+5. From the level editor click PyCharm -> Connect. <i>This will freeze your Unreal session until the next step (or timeout)</i> 
+   1. <img src="docs/resources/images/getting_started_5.png" alt="Unreal" width="700">
+6. Switch back over to PyCharm and click "Resume Program" or press F9 
+   1. <img src="docs/resources/images/getting_started_6.png" alt="Unreal" width="700">
+    
+PyCharm is now connected to Unreal, you can set break points in your code and interactively debug your Python tools at runtime, enjoy!
 
-_For more examples, please refer to the [Documentation](https://mattdeform.github.io/unreal_pycharm_remote_debug)._
-
+> Note: Sometimes remote debug sessions can hang or become unstable. If this happens you can simply click the "Disconnect" button in Unreal and then start from step 4 again.
+    
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ROADMAP -->
 ## Roadmap
-- [ ] Feature: foo
-  - [ ] Feature: bar
-  - [ ] Feature: baz
 
 See the [open issues](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues) for a full list of proposed features (and known issues).
 
@@ -164,11 +159,6 @@ Please reach out via the [request a feature](https://github.com/mattdeform/unrea
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-<!-- EDIT-ME: add product screenshot -->
-[product-screenshot]: docs/resources/images/screenshot.png
-[project-link]: https://github.com/mattdeform/unreal_pycharm_remote_debug
-
 
 <!-- Python -->
 [python-shield]: https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54

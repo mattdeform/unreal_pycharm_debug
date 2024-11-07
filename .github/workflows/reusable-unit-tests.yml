@@ -5,7 +5,7 @@ on:
   workflow_dispatch:  # Manual trigger
 
 jobs:
-  tests:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,5 +23,5 @@ jobs:
           pip-compile requirements-test.in
           python -m pip install --user -r requirements-test.txt
 
-      - name: Run tests
+      - name: Execute tests
         run:  pytest
