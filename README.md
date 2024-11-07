@@ -150,8 +150,6 @@ Please reach out via the [request a feature](https://github.com/mattdeform/unrea
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 * Project template by [TechArtOps](https://www.techartops.com).
-* foo
-* bar
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
