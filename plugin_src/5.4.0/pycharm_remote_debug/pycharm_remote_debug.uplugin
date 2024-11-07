@@ -11,9 +11,10 @@
 	"MarketplaceURL": "",
 	"SupportURL": "https://github.com/mattdeform/unreal_pycharm_remote_debug",
 	"CanContainContent": true,
-	"IsBetaVersion": true,
+	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"EngineVersion" : "5.x.0",
-	"PlatformAllowList": [ "Win64", "Win32", "Mac" ]
+	"EngineVersion" : "5.4.0",
+	"PlatformAllowList": [ "Win64", "Win32", "Mac" ],
+	"EnabledByDefault": true
 }

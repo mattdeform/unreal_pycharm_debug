@@ -9,8 +9,9 @@ on:
 
 jobs:
 
-  static-analysis:
-    uses: ./.github/workflows/reusable-static-analysis.yml
-
   tests:
     uses: ./.github/workflows/reusable-unit-tests.yml
+
+  static-analysis:
+    needs: tests
+    uses: ./.github/workflows/reusable-static-analysis.yml
