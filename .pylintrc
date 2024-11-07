@@ -9,8 +9,8 @@ ignored-modules=unreal
 [MASTER]
 disable=
     C0103,  # invalid-name (for Content/Python UE requirement )
-    R0801,  # duplicate-code
     C0114,  # missing-module-docstring
     C0415,  # import-outside-toplevel
+    C0115,  # missing-class-docstring
+    R0801,  # duplicate-code
     R0903,  # too-few-public-methods
-

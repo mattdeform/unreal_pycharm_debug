@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
-    <img src="plugin_src/5.x.0/pycharm_remote_debug/Resources/Icon128.png" alt="PyCharmLogo" width="128" height="128">
+    <img src="plugin_src/5.4.0/pycharm_remote_debug/Resources/Icon128.png" alt="PyCharmLogo" width="128" height="128">
   </a>
 
 <h3 align="center">unreal_pycharm_remote_debug</h3>
@@ -107,7 +107,7 @@ To run tests locally:
 
 with coverage:
 -   ```sh
-    pytest --cov=src/
+    pytest --cov=plugin_src/5.4.0/pycharm_remote_debug/Content/Python
     ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -119,20 +119,20 @@ Static code analysis is performed with [Pylint](https://pypi.org/project/pylint/
 To run pylint locally:
 
 -   ```sh
-    pylint --rcfile=.pylintrc plugin_src/5.x.0/pycharm_remote_debug/
+    pylint --rcfile=.pylintrc plugin_src/5.4.0/pycharm_remote_debug/
     ```
     - A modified [.pylintrc](.pylintrc) file is provided with modifications to ignore Unreal import errors. Append to this file as needed.  
 
 Black formater can be run locally with:
 
 -   ```sh
-    black plugin_src/5.x.0/pycharm_remote_debug/
+    black plugin_src/5.4.0/pycharm_remote_debug/
     ```
 
 Run [mypy](https://mypy.readthedocs.io/en/stable/) checks locally with:
 
 -   ```sh
-    mypy plugin_src/5.x.0/pycharm_remote_debug/
+    mypy plugin_src/5.4.0/pycharm_remote_debug/
     ```
     - A modified [mypy.ini](mypy.ini) file is included with modifications to ignore Maya import errors. Append to this file as needed.
 

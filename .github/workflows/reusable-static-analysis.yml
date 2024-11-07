@@ -30,13 +30,13 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        pylint plugin_src/5.x.0/pycharm_remote_debug/Content/Python
+        pylint plugin_src/5.4.0/pycharm_remote_debug/Content/Python
 
     - name: Analysing the code with black
       uses: psf/black@stable
       with:
-        src: "plugin_src/5.x.0/pycharm_remote_debug/Content/Python"
+        src: "plugin_src/5.4.0/pycharm_remote_debug/Content/Python"
         options: "--diff"
 
     - name: Analysing the code with mypy
-      run: mypy plugin_src/5.x.0/pycharm_remote_debug/Content/Python
+      run: mypy plugin_src/5.4.0/pycharm_remote_debug/Content/Python
