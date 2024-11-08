@@ -5,7 +5,7 @@ ACTION_NAME = "config_debugger"
 ACTION_LABEL = "Configure"
 ICON_STYLE = "EditorStyle"
 ICON_NAME = "AutomationTools.MenuIcon"
-CONFIG_WIDGET_PATH = "/pycharm_remote_debug/Blueprints/Widgets/EUW_PCRD_CONFIG"
+CONFIG_WIDGET_PATH = "/PyCharmRemoteDebug/Blueprints/Widgets/EUW_PCRD_CONFIG"
 
 
 @unreal.uclass()

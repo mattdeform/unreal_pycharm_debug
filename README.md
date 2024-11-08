@@ -50,7 +50,6 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -59,7 +58,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<b>This is NOT an official JetBrains or Epic Games plugin, just a small utility I built for myself that I figured others might find useful.</b>
+> <b>This is <u>NOT</u> an official JetBrains or Epic Games plugin.</b>
 
 <div align="center">
 
@@ -75,7 +74,7 @@
 
 ### Prerequisites
 
-* [Unreal 5.4.0](https://www.unrealengine.com)
+* [Unreal Engine 5](https://www.unrealengine.com)
 * [PyCharm Professional](https://www.jetbrains.com/pycharm/buy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,14 +128,6 @@ If you have a suggestion that would make this better, please open an issue from 
 
 Development and contribution guidelines can be found on the [CONTRIBUTING.md](CONTRIBUTING.md) page
 
-<!-- LICENSE -->
-## License
-
-Distributed under the `insert_license_name` license. See `LICENSE` file for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -165,10 +156,5 @@ Please reach out via the [request a feature](https://github.com/mattdeform/unrea
 [python-url]: https://python.org/
 [pytest-shield]: https://img.shields.io/badge/tests-pytest-%230A9EDC
 [pytest-url]: https://docs.pytest.org/
-[github-shield]: https://img.shields.io/badge/GitHub-%23181717?logo=github
-[github-url]: https://github.com/
-[github-actions-shield]: https://img.shields.io/badge/GitHub%20Actions-%232671E5?logo=githubactions&logoColor=white
-[github-actions-url]: https://github.com/features/actions
-
 [unreal_5-shield]: https://img.shields.io/badge/Unreal%20Engine-5.x-grey?logo=unrealengine&labelColor=%230E1128
 [unreal-url]: https://www.unrealengine.com/en-US

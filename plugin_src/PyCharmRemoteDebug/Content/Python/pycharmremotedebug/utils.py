@@ -13,7 +13,7 @@ from .exceptions import (
 DEFAULT_PORT_NUMBER = 5678
 MIN_PORT_NUMBER = 0
 MAX_PORT_NUMBER = 65535  # unsigned 16-bit integer range for port numbers
-PLUGIN_NAME = "pycharm_remote_debug"
+PLUGIN_NAME = "PyCharmRemoteDebug"
 RELATIVE_CONFIG_PATH = "Config/tool_config.json"
 
 
