@@ -20,7 +20,7 @@ def install() -> None:
     config_action = PyCharmRemoteDebugConfig()
 
     dbg_menu = tool_bar.add_sub_menu(
-        "dbg_menu", "Python", "pycharm_remote_debug", "PyCharm"
+        "dbg_menu", "Python", "PyCharmRemoteDebug", "PyCharm"
     )
 
     for action in [start_action, stop_action, config_action]:
