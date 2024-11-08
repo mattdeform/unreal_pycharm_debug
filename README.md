@@ -58,7 +58,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-> <b>This is <u>NOT</u> an official JetBrains or Epic Games plugin.</b>
+> __This is NOT an official JetBrains or Epic Games plugin.__
 
 <div align="center">
 
@@ -82,11 +82,16 @@
 
 
 ### Installation
-
-1. [Download the plugin and "Add to My Library"](https://www.fab.com/). <!--   1. TODO: add proper link when live -->
-2. Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library. <!-- TODO: add pic when live -->
-3. Open the project and in the level editor you should have a new menu named "PyCharm", select Configure
-   1. <img src="docs/resources/images/getting_started_0.png" alt="Unreal" width="700">
+1. Get the plugin, from either:
+    - __FAB store:__
+      - [Download the plugin and "Add to My Library"](https://www.fab.com/listings/e35aac34-1870-486b-bc81-974b949dec97/).
+      - Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library.
+    - __From GitHub:__
+      - Select the Unreal Engine version required from the releases page (installation instructions included on release page).
+2. Enable the Plugin in the Unreal "Plugin Settings" menu, and restart the editor.
+    <img src="docs/resources/images/enable_plugin.png" alt="Unreal" width="75%">
+3. In the level editor you should have a new menu named "PyCharm".
+   <img src="docs/resources/images/getting_started_0.png" alt="Unreal" width="75%">
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,17 +101,17 @@
 ### Usage
 
 1. You can configure port number and debug egg file location (comes with PyCharm installation) by clicking on the PyCharm -> Configure menu. 
-    1. <img src="docs/resources/images/getting_started_1.png" alt="Unreal" width="700">
+    1. <img src="docs/resources/images/getting_started_1.png" alt="Unreal" width="75%">
 2. Select desired port number, and click "Find installed" to find the systems installed PyCharm. Alternatively you can manually enter a path to a desired pydevd-pycharm.egg file.
-   1. <img src="docs/resources/images/getting_started_2.png" alt="Unreal" width="700">
-3. In PyCharm, create a new Python Debug Server named <b>Unreal</b>, with the port number set in the previous step.
-   1. <img src="docs/resources/images/getting_started_3.png" alt="Unreal" width="700">
+   1. <img src="docs/resources/images/getting_started_2.png" alt="Unreal" width="75%">
+3. In PyCharm, create a new Python Debug Server named ___Unreal___, with the port number set in the previous step.
+   1. <img src="docs/resources/images/getting_started_3.png" alt="Unreal" width="75%">
 4. In PyCharm click the Unreal debug icon.
    1. <img src="docs/resources/images/getting_started_4.png" alt="Unreal" >
 5. From the level editor click PyCharm -> Connect. <i>This will freeze your Unreal session until the next step (or timeout)</i> 
-   1. <img src="docs/resources/images/getting_started_5.png" alt="Unreal" width="700">
+   1. <img src="docs/resources/images/getting_started_5.png" alt="Unreal" width="75%">
 6. Switch back over to PyCharm and click "Resume Program" or press F9 
-   1. <img src="docs/resources/images/getting_started_6.png" alt="Unreal" width="700">
+   1. <img src="docs/resources/images/getting_started_6.png" alt="Unreal" width="75%">
     
 PyCharm is now connected to Unreal, you can set break points in your code and interactively debug your Python tools at runtime, enjoy!
 
