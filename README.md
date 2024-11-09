@@ -23,7 +23,7 @@
   An Unreal Engine plugin for connecting to a PyCharm remote debugger.
   <br />
   <p align="center">
-    <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=bOhCwzmAxrc">View Demo</a>
     ·
     <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -80,7 +80,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 ### Installation
 1. Get the plugin, from either:
     - __FAB store:__
@@ -92,7 +91,6 @@
     <img src="docs/resources/images/enable_plugin.png" alt="Unreal" width="75%">
 3. In the level editor you should have a new menu named "PyCharm".
    <img src="docs/resources/images/getting_started_0.png" alt="Unreal" width="75%">
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,13 +140,11 @@ Please reach out via the [request a feature](https://github.com/mattdeform/unrea
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 * Project template by [TechArtOps](https://www.techartops.com).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
