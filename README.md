@@ -84,10 +84,10 @@
 ### Installation
 1. Get the plugin, from either:
     - __FAB store:__
-      - [Download the plugin and "Add to My Library"](https://www.fab.com/listings/e35aac34-1870-486b-bc81-974b949dec97/).
-      - Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library.
+      - [Download the plugin and ___Add to My Library___](https://www.fab.com/listings/e35aac34-1870-486b-bc81-974b949dec97/).
+      - Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library."
     - __From GitHub:__
-      - Select the Unreal Engine version required from the releases page (installation instructions included on release page).
+      - Select the Unreal Engine version required from the [Releases](https://github.com/mattdeform/unreal_pycharm_remote_debug/releases) page (installation instructions included on release page).
 2. Enable the Plugin in the Unreal "Plugin Settings" menu, and restart the editor.
     <img src="docs/resources/images/enable_plugin.png" alt="Unreal" width="75%">
 3. In the level editor you should have a new menu named "PyCharm".
