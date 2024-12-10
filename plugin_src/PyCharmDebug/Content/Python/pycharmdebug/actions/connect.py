@@ -12,11 +12,12 @@ ACTION_NAME = "start_debugger"
 ACTION_LABEL = "Connect"
 ICON_STYLE = "EditorStyle"
 ICON_NAME = "Sequencer.IconKeyBreak"
+HOST = "localhost"
 
 
 @unreal.uclass()
-class PyCharmRemoteDebugConnect(unreal.ToolMenuEntryScript):
-    """Menu action to connect to a PyCharm remote debugger from within the
+class PyCharmDebugConnect(unreal.ToolMenuEntryScript):
+    """Menu action to connect to a PyCharm debugger from within the
     level editor"""
 
     def __init__(self) -> None:
@@ -30,7 +31,7 @@ class PyCharmRemoteDebugConnect(unreal.ToolMenuEntryScript):
     def execute(
         self, context: unreal.ToolMenuContext  # pylint: disable=(unused-argument)
     ) -> None:
-        """Connect to the PyCharm remote debugger, via the port specified in
+        """Connect to the PyCharm debugger, via the port specified in
         Resources/config.json
 
         Args:
@@ -48,7 +49,7 @@ class PyCharmRemoteDebugConnect(unreal.ToolMenuEntryScript):
             return
 
         pydevd_pycharm.settrace(
-            "localhost",
+            HOST,
             port=get_debug_port(),
             stdoutToServer=True,
             stderrToServer=True,

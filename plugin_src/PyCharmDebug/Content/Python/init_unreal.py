@@ -1,7 +1,7 @@
 """ Plugin initialization script """
 
 try:
-    from pycharmremotedebug.menu import install  # type: ignore
+    from pycharmdebug.menu import install  # type: ignore
 
     install()
 except ImportError:

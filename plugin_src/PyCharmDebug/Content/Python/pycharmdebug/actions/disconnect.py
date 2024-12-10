@@ -8,14 +8,14 @@ ICON_NAME = "Sequencer.IconKeyAuto"
 
 
 @unreal.uclass()
-class PyCharmRemoteDebugDisconnect(unreal.ToolMenuEntryScript):
-    """Menu action to disconnect from a PyCharm remote debugger"""
+class PyCharmDebugDisconnect(unreal.ToolMenuEntryScript):
+    """Menu action to disconnect from a PyCharm debugger"""
 
     @unreal.ufunction(override=True)
     def execute(
         self, context: unreal.ToolMenuContext  # pylint: disable=(unused-argument)
     ) -> None:
-        """Disconnect from the PyCharm remote debugger
+        """Disconnect from the PyCharm debugger
 
         Args:
             context (unreal.ToolMenuContext): ToolMenuContext context object

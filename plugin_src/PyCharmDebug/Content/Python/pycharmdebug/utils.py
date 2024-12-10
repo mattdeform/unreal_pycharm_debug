@@ -5,15 +5,15 @@ import json
 from unreal import PluginBlueprintLibrary
 
 from .exceptions import (
-    PyCharmRemoteDebugRuntimeError,
-    PyCharmRemoteDebugTypeError,
+    PyCharmDebugRuntimeError,
+    PyCharmDebugTypeError,
 )
 
 
 DEFAULT_PORT_NUMBER = 5678
 MIN_PORT_NUMBER = 0
 MAX_PORT_NUMBER = 65535  # unsigned 16-bit integer range for port numbers
-PLUGIN_NAME = "PyCharmRemoteDebug"
+PLUGIN_NAME = "PyCharmDebug"
 RELATIVE_CONFIG_PATH = "Config/tool_config.json"
 
 
@@ -28,13 +28,13 @@ def get_plugin_config(create_on_fail=False) -> Path:
         str: The path to the tool config file
 
     Raises:
-        PyCharmRemoteDebugRuntimeError:
+        PyCharmDebugRuntimeError:
             Failed to resolve plugin root directory
             Failed to resolve plugin config
     """
     plugin_root = PluginBlueprintLibrary.get_plugin_base_dir(PLUGIN_NAME)
     if plugin_root is None:
-        raise PyCharmRemoteDebugRuntimeError("Failed to resolve plugin root directory")
+        raise PyCharmDebugRuntimeError("Failed to resolve plugin root directory")
 
     resolved_plugin_config = Path(plugin_root).joinpath(RELATIVE_CONFIG_PATH)
 
@@ -42,7 +42,7 @@ def get_plugin_config(create_on_fail=False) -> Path:
         if create_on_fail:
             resolved_plugin_config.touch()
         else:
-            raise PyCharmRemoteDebugRuntimeError("Failed to resolve plugin config")
+            raise PyCharmDebugRuntimeError("Failed to resolve plugin config")
 
     return resolved_plugin_config
 
@@ -76,16 +76,16 @@ def set_debug_port(port: int) -> bool:
         port (int): The port number to set
 
     Raises:
-        PyCharmRemoteDebugTypeError:
+        PyCharmDebugTypeError:
             Port must be an integer
-        PyCharmRemoteDebugRuntimeError:
+        PyCharmDebugRuntimeError:
             Port must be between 0 and 65535
     """
     if isinstance(port, int) is False:
-        raise PyCharmRemoteDebugTypeError("Port must be an integer")
+        raise PyCharmDebugTypeError("Port must be an integer")
 
     if port < MIN_PORT_NUMBER or port > MAX_PORT_NUMBER:
-        raise PyCharmRemoteDebugRuntimeError("Port must be between 0 and 65535")
+        raise PyCharmDebugRuntimeError("Port must be between 0 and 65535")
 
     plugin_config = get_plugin_config(create_on_fail=True)
 
@@ -110,24 +110,24 @@ def find_system_dbg_egg() -> str:
         str: Path to the PyCharm installation debug egg or None
 
     Raises:
-        PyCharmRemoteDebugRuntimeError:
+        PyCharmDebugRuntimeError:
             PyCharm installation not found
             PyCharm bin path not found
             System debug egg not found
     """
     pycharm_bin_dir = os.environ.get("PyCharm")
     if pycharm_bin_dir is None:
-        raise PyCharmRemoteDebugRuntimeError("PyCharm installation not found")
+        raise PyCharmDebugRuntimeError("PyCharm installation not found")
 
     pycharm_dir_path: Path = Path(pycharm_bin_dir.split(";")[0])
 
     if pycharm_dir_path.is_dir() is False:
-        raise PyCharmRemoteDebugRuntimeError("PyCharm bin path not found")
+        raise PyCharmDebugRuntimeError("PyCharm bin path not found")
 
     egg_path: Path = pycharm_dir_path.parent.joinpath("debug-eggs/pydevd-pycharm.egg")
 
     if egg_path.is_file() is False:
-        raise PyCharmRemoteDebugRuntimeError("System debug egg not found")
+        raise PyCharmDebugRuntimeError("System debug egg not found")
 
     return egg_path.as_posix()
 
@@ -139,7 +139,7 @@ def get_debug_egg() -> str:
         str: Path to the debug egg or empty string if not set
 
     Raises:
-        PyCharmRemoteDebugRuntimeError
+        PyCharmDebugRuntimeError
             No debug egg set
     """
     plugin_config = get_plugin_config()
@@ -156,7 +156,7 @@ def get_debug_egg() -> str:
 
     egg_path = Path(serialized_egg)
     if egg_path.is_file() is False or egg_path.name != "pydevd-pycharm.egg":
-        raise PyCharmRemoteDebugRuntimeError(
+        raise PyCharmDebugRuntimeError(
             "No valid debug_egg location saved in the config, please either enter "
             "one manually in the dialog box, or click 'Find installed' to try "
             "and resolve from a system PyCharm installation"
@@ -177,7 +177,7 @@ def set_debug_egg(location: str) -> bool:
     plugin_config = get_plugin_config(create_on_fail=True)
 
     if plugin_config is None:
-        raise PyCharmRemoteDebugRuntimeError("Failed to find or create plugin config")
+        raise PyCharmDebugRuntimeError("Failed to find or create plugin config")
 
     with open(plugin_config.as_posix(), "r", encoding="utf-8") as file:
         data: dict = json.load(file)
@@ -189,9 +189,7 @@ def set_debug_egg(location: str) -> bool:
         location = location.strip('"')
         egg_path = Path(location)
         if egg_path.is_file() is False or egg_path.name != "pydevd-pycharm.egg":
-            raise PyCharmRemoteDebugTypeError(
-                f"Invalid egg file: {egg_path.as_posix()}"
-            )
+            raise PyCharmDebugTypeError(f"Invalid egg file: {egg_path.as_posix()}")
 
         data["debug_egg"] = egg_path.as_posix()
 

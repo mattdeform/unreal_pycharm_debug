@@ -3,7 +3,7 @@
 <!-- PROJECT SHIELDS -->
 <div align="center">
 
-[![CI](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-main.yml/badge.svg)](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-main.yml)
+[![CI](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml/badge.svg)](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml)
 [![pytest][pytest-shield]][pytest-url]
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -12,22 +12,22 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
+  <a href="https://github.com/mattdeform/unreal_pycharm_debug">
     <img src="docs/resources/images/project_logo.png" alt="Unreal" width="50%">
   </a>
 
 [![Python][python_3-shield]][python-url]
 [![Unreal][unreal_5-shield]][unreal-url]
 
-<h3 align="center">Unreal PyCharm Remote Debug</h3>
-  An Unreal Engine plugin for connecting to a PyCharm remote debugger.
+<h3 align="center">Unreal PyCharm Debug</h3>
+  An Unreal Engine plugin for connecting to a PyCharm debugger.
   <br />
   <p align="center">
-    <a href="https://www.youtube.com/watch?v=bOhCwzmAxrc">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=wymW7qOSqiw">View Demo</a>
     ·
-    <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -81,12 +81,7 @@
 
 
 ### Installation
-1. Get the plugin, from either:
-    - __FAB store:__
-      - [Download the plugin and ___Add to My Library___](https://www.fab.com/listings/e35aac34-1870-486b-bc81-974b949dec97/).
-      - Add PyCharm Remote Debug plugin to your project of choice from the Unreal launcher Fab library."
-    - __From GitHub:__
-      - Select the Unreal Engine version required from the [Releases](https://github.com/mattdeform/unreal_pycharm_remote_debug/releases) page (installation instructions included on release page).
+1. Select the Unreal Engine version required from the [Releases](https://github.com/mattdeform/unreal_pycharm_debug/releases) page (installation instructions included on release page).
 2. Enable the Plugin in the Unreal "Plugin Settings" menu, and restart the editor.
     <img src="docs/resources/images/enable_plugin.png" alt="Unreal" width="75%">
 3. In the level editor you should have a new menu named "PyCharm".
@@ -111,9 +106,9 @@
 6. Switch back over to PyCharm and click "Resume Program" or press F9 
    1. <img src="docs/resources/images/getting_started_6.png" alt="Unreal" width="75%">
     
-PyCharm is now connected to Unreal, you can set break points in your code and interactively debug your Python tools at runtime, enjoy!
+PyCharm is now connected to Unreal, you can set break points in your code and interactively debug your Python tools, enjoy!
 
-> Note: Sometimes remote debug sessions can hang or become unstable. If this happens you can simply click the "Disconnect" button in Unreal and then start from step 4 again.
+> Note: Sometimes debug sessions can hang or become unstable. If this happens you can simply click the "Disconnect" button in Unreal and then start from step 4 again.
     
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,13 +116,13 @@ PyCharm is now connected to Unreal, you can set break points in your code and in
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/mattdeform/unreal_pycharm_debug/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Contributing
-If you have a suggestion that would make this better, please open an issue from the [request a feature](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md) pages.
+If you have a suggestion that would make this better, please open an issue from the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=bug&template=bug-report---.md) pages.
 
 Development and contribution guidelines can be found on the [CONTRIBUTING.md](CONTRIBUTING.md) page
 
@@ -135,7 +130,7 @@ Development and contribution guidelines can be found on the [CONTRIBUTING.md](CO
 <!-- CONTACT -->
 ## Contact
 
-Please reach out via the [request a feature](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md) pages.
+Please reach out via the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=bug&template=bug-report---.md) pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
