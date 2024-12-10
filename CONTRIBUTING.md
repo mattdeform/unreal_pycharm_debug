@@ -5,11 +5,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-  <a href="https://github.com/mattdeform/unreal_pycharm_remote_debug">
+  <a href="https://github.com/mattdeform/unreal_pycharm_debug">
     <img src="docs/resources/images/project_logo.png" alt="PyCharmLogo" width="200">
   </a>
 
-<h3 align="center">Unreal PyCharm Remote Debug</h3>
+<h3 align="center">Unreal PyCharm Debug</h3>
 
   <p align="center">
     Development and Contributing Guidelines
@@ -72,7 +72,7 @@ Project dependencies are available in the [requirements.in](requirements.in) fil
 ## Continuous Integration
 Continuous integration is set up with [GitHub Actions][github-actions-url], workflows can be found in the [.github/workflows](.github/workflows) directory. 
 
-- [ci-main.yml](.github/workflows/ci-main.yml) runs tests, performs linting, formatting, and type hinting checks. It runs automatically on every push and pull request to main or can be triggered from the `Run workflow` button on the [actions menu](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-main.yml).
+- [ci-main.yml](.github/workflows/ci-main.yml) runs tests, performs linting, formatting, and type hinting checks. It runs automatically on every push and pull request to main or can be triggered from the `Run workflow` button on the [actions menu](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ To run tests locally:
 
 with coverage:
 -   ```sh
-    pytest --cov=plugin_src/PyCharmRemoteDebug/Content/Python
+    pytest --cov=plugin_src/PyCharmDebug/Content/Python
     ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,20 +101,20 @@ Static code analysis is performed with [Pylint](https://pypi.org/project/pylint/
 To run pylint locally:
 
 -   ```sh
-    pylint --rcfile=.pylintrc plugin_src/PyCharmRemoteDebug/Content/Python/
+    pylint --rcfile=.pylintrc plugin_src/PyCharmDebug/Content/Python/
     ```
     - A modified [.pylintrc](.pylintrc) file is provided with modifications to ignore Unreal import errors. Append to this file as needed.  
 
 Black formater can be run locally with:
 
 -   ```sh
-    black plugin_src/PyCharmRemoteDebug/Content/Python/
+    black plugin_src/PyCharmDebug/Content/Python/
     ```
 
 Run [mypy](https://mypy.readthedocs.io/en/stable/) checks locally with:
 
 -   ```sh
-    mypy plugin_src/PyCharmRemoteDebug/Content/Python/
+    mypy plugin_src/PyCharmDebug/Content/Python/
     ```
     - A modified [mypy.ini](mypy.ini) file is included with modifications to ignore Unreal import errors. Append to this file as needed.
 

@@ -5,12 +5,12 @@ ACTION_NAME = "config_debugger"
 ACTION_LABEL = "Configure"
 ICON_STYLE = "EditorStyle"
 ICON_NAME = "AutomationTools.MenuIcon"
-CONFIG_WIDGET_PATH = "/PyCharmRemoteDebug/Blueprints/Widgets/EUW_PCRD_CONFIG"
+CONFIG_WIDGET_PATH = "/PyCharmDebug/Blueprints/Widgets/EUW_PCRD_CONFIG"
 
 
 @unreal.uclass()
-class PyCharmRemoteDebugConfig(unreal.ToolMenuEntryScript):
-    """Menu action to configure the PyCharm remote debugger"""
+class PyCharmDebugConfig(unreal.ToolMenuEntryScript):
+    """Menu action to configure the PyCharm debugger"""
 
     def __init__(self) -> None:
         super().__init__()
@@ -22,7 +22,7 @@ class PyCharmRemoteDebugConfig(unreal.ToolMenuEntryScript):
     def execute(
         self, context: unreal.ToolMenuContext  # pylint: disable=(unused-argument)
     ) -> None:
-        """Open PyCharm remote debugger configuration widget
+        """Open PyCharm debugger configuration widget
 
         Args:
             context (unreal.ToolMenuContext): ToolMenuContext context object

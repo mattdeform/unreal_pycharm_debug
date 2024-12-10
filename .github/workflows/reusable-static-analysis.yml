@@ -32,13 +32,13 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        pylint plugin_src/PyCharmRemoteDebug/Content/Python/  
+        pylint plugin_src/PyCharmDebug/Content/Python/  
 
     - name: Analysing the code with black
       uses: psf/black@stable
       with:
-        src: "plugin_src/PyCharmRemoteDebug/Content/Python/"
+        src: "plugin_src/PyCharmDebug/Content/Python/"
         options: "--diff"
 
     - name: Analysing the code with mypy
-      run: mypy plugin_src/PyCharmRemoteDebug/Content/Python/
+      run: mypy plugin_src/PyCharmDebug/Content/Python/

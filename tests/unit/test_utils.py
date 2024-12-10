@@ -3,7 +3,7 @@ import pytest
 
 def test_get_plugin_config_expects_plugin_config_path(mocker):
     # Arrange
-    from pycharmremotedebug.utils import get_plugin_config
+    from pycharmdebug.utils import get_plugin_config
     mocker.patch(
         "unreal.PluginBlueprintLibrary.get_plugin_base_dir",
         return_value="/foo/bar"
