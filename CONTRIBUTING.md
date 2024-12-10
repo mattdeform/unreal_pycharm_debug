@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_debug">
-    <img src="docs/resources/images/project_logo.png" alt="PyCharmLogo" width="200">
+    <img src="docs/resources/images/project_logo.png" alt="PyCharmLogo" width="30%">
   </a>
 
 <h3 align="center">Unreal PyCharm Debug</h3>
