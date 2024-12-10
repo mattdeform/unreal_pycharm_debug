@@ -5,7 +5,7 @@ import json
 from unreal import PluginBlueprintLibrary
 
 from .exceptions import (
-    PyCharmRuntimeError,
+    PyCharmDebugRuntimeError,
     PyCharmDebugTypeError,
 )
 
@@ -189,9 +189,7 @@ def set_debug_egg(location: str) -> bool:
         location = location.strip('"')
         egg_path = Path(location)
         if egg_path.is_file() is False or egg_path.name != "pydevd-pycharm.egg":
-            raise PyCharmDebugTypeError(
-                f"Invalid egg file: {egg_path.as_posix()}"
-            )
+            raise PyCharmDebugTypeError(f"Invalid egg file: {egg_path.as_posix()}")
 
         data["debug_egg"] = egg_path.as_posix()
 

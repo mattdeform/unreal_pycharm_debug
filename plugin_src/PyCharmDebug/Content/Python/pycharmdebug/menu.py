@@ -19,9 +19,7 @@ def install() -> None:
     stop_action = PyCharmDebugDisconnect()
     config_action = PyCharmDebugConfig()
 
-    dbg_menu = tool_bar.add_sub_menu(
-        "dbg_menu", "Python", "PyCharmDebug", "PyCharm"
-    )
+    dbg_menu = tool_bar.add_sub_menu("dbg_menu", "Python", "PyCharmDebug", "PyCharm")
 
     for action in [start_action, stop_action, config_action]:
         menu_entry = unreal.ToolMenuEntry(type=unreal.MultiBlockType.MENU_ENTRY)

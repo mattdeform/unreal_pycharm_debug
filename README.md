@@ -3,7 +3,7 @@
 <!-- PROJECT SHIELDS -->
 <div align="center">
 
-[![CI](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml/badge.svg)](https://github.com/mattdeform/unreal_pycharm_remote_debug/actions/workflows/ci-main.yml)
+[![CI](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml/badge.svg)](https://github.com/mattdeform/unreal_pycharm_debug/actions/workflows/ci-main.yml)
 [![pytest][pytest-shield]][pytest-url]
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -122,7 +122,7 @@ See the [open issues](https://github.com/mattdeform/unreal_pycharm_debug/issues)
 
 
 ## Contributing
-If you have a suggestion that would make this better, please open an issue from the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md) pages.
+If you have a suggestion that would make this better, please open an issue from the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=bug&template=bug-report---.md) pages.
 
 Development and contribution guidelines can be found on the [CONTRIBUTING.md](CONTRIBUTING.md) page
 
@@ -130,7 +130,7 @@ Development and contribution guidelines can be found on the [CONTRIBUTING.md](CO
 <!-- CONTACT -->
 ## Contact
 
-Please reach out via the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_remote_debug/issues/new?labels=bug&template=bug-report---.md) pages.
+Please reach out via the [request a feature](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=enhancement&template=feature-request---.md) or [report a bug](https://github.com/mattdeform/unreal_pycharm_debug/issues/new?labels=bug&template=bug-report---.md) pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
