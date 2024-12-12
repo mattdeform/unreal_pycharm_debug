@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
   <a href="https://github.com/mattdeform/unreal_pycharm_debug">
-    <img src="docs/resources/images/project_logo.png" alt="Unreal" width="30%">
+    <img src="docs/resources/images/project_logo.png" alt="Unreal" width="50%">
   </a>
 
 [![Python][python_3-shield]][python-url]
